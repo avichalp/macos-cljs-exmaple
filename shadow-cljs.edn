@@ -1,0 +1,13 @@
+{:deps {:aliases [:dev]}
+
+ :nrepl {:port 9000}
+
+ :builds
+ {:app
+  {:target :react-native
+   :init-fn example.app/main
+   :output-dir "app"
+   ;; for some reason, for me, shadow picks the wrong (different interface) IP
+   :closure-defines {shadow.cljs.devtools.client.env/server_host "192.168.178.20"}
+   :devtools {:preloads [websocket]
+              :autoload true}}}}
