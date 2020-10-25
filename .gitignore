@@ -62,5 +62,5 @@ buck-out/
 /ios/Pods/
 
 .shadow-cljs
-app
+out
 .cpcache

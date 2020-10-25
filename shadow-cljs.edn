@@ -6,7 +6,7 @@
  {:app
   {:target :react-native
    :init-fn example.app/main
-   :output-dir "app"
+   :output-dir "out"
    ;; for some reason, for me, shadow picks the wrong (different interface) IP
    :closure-defines {shadow.cljs.devtools.client.env/server_host "192.168.178.20"}
    :devtools {:preloads [websocket]

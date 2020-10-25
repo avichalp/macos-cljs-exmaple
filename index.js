@@ -1,1 +1,1 @@
-import "./app/index.js"
+import "./out/index.js"
